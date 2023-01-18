@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><h1>Your details</h1>
+    <form action="">
+        Your name:<p id="name"></p>
+        Your email:<p id="email"></p>
+    </form>
+    <script>
+        document.getElementById("name").innerHTML=localStorage.getItem('name')
+        document.getElementById("email").innerHTML=localStorage.getItem('email')
+    </script>
+</body>
+</html>

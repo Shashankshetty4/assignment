@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Registration form</h1>
+    <script>
+        function vali(){
+        var name=document.getElementById("name").value;
+        var email=document.getElementById("email").value;
+        localStorage.setItem("name",name)
+        localStorage.setItem("email",email)}
+    </script>
+    <form action="info.html">
+        Enter your name:
+        <input type="text" name="name" id="name"><br><br>
+        Enter your Email:
+        <input type="email" name="email" id="email">
+        <input type="submit" value="Submit" onclick="vali()">
+    </form>
+</body>
+</html>
